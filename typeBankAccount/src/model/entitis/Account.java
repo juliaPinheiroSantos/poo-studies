@@ -17,28 +17,20 @@ public abstract class Account {
     return this.balance;
   }
 
-  public void depositBalance(double value){
-    balance = balance + value;
-  }
-
-  public void withdrawBalance(double value){
-    balance = balance - value;
-  }
-
   public String getHolder(){
-    return this. holder;
-  }
-
-  public void setHolder(String holder){
-    this.holder = holder;
+    return this.holder;
   }
 
   public String getNumber(){
     return this.number;
   }
 
-  public void setNumber (String number){
-    this.number = number;
+  public void depositBalance(double value){
+    balance = balance + value;
+  }
+
+  public void withdrawBalance(double value){
+    balance = balance - value;
   }
 
   @Override
